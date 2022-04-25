@@ -1,0 +1,12 @@
+<h1>I am a host component</h1>
+
+<ng-container #vc></ng-container>
+<div *ngIf="isLoading">Loading...</div>
+
+<button (click)="insertChildView()">Insert Child View</button>
+<button (click)="removeChildView()">Remove Child View</button>
+<button (click)="reloadChildView()">Reload Child View</button>
+
+<ng-template #tpl>
+  <app-child></app-child>
+</ng-template>
